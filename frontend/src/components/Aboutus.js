@@ -19,16 +19,16 @@ function Aboutus() {
         </p>
       </div>
       <div className="row">
-        <div className="col-12 col-sm-6 col-md-3">
-          <div className="card">
+        <div className="col-12 col-sm-6 col-md-3 d-flex">
+          <div className="card flex-fill">
             <img src="#" className="card-img-top" alt="graphic design"></img>
             <div className="card-body">
               <h5 className="card-title">Graphic Design</h5>
             </div>
           </div>
         </div>
-        <div className="col-12 col-sm-6 col-md-3">
-          <div className="card">
+        <div className="col-12 col-sm-6 col-md-3 d-flex">
+          <div className="card flex-fill">
             <img
               src="#"
               className="card-img-top"
@@ -39,16 +39,16 @@ function Aboutus() {
             </div>
           </div>
         </div>
-        <div className="col-12 col-sm-6 col-md-3">
-          <div className="card">
+        <div className="col-12 col-sm-6 col-md-3 d-flex">
+          <div className="card flex-fill">
             <img src="#" className="card-img-top" alt="digital art"></img>
             <div className="card-body">
               <h5 className="card-title">Digital Art</h5>
             </div>
           </div>
         </div>
-        <div className="col-12 col-sm-6 col-md-3">
-          <div className="card">
+        <div className="col-12 col-sm-6 col-md-3 d-flex">
+          <div className="card flex-fill">
             <img
               src="#"
               className="card-img-top"

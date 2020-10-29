@@ -1,5 +1,4 @@
 h1 {
-  padding-top: 65px;
   text-align: center;
   flex: auto;
 }
@@ -7,4 +6,10 @@ h1 {
 h3 {
   text-align: center;
   flex: auto;
+}
+
+.title {
+  padding-top: 65px;
+  height: 100vh;
+  background-image: url("../assets/background.jpg");
 }

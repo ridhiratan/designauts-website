@@ -1,0 +1,4 @@
+.card-body,
+.card-img-top {
+  pointer-events: none;
+}

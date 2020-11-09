@@ -1,0 +1,38 @@
+export const COMPETITIONS = [
+  {
+    id: 0,
+    name: "UI Design",
+    date: "08-11-20",
+    prizes: "worth 5k",
+    description: "Design beautiful UIs",
+    status: "active",
+    poster: "url/of/poster",
+  },
+  {
+    id: 1,
+    name: "Diwali Digital Arts",
+    date: "08-11-20",
+    prizes: "worth 5k",
+    description: "Design Diwali Art",
+    status: "active",
+    poster: "url/of/poster",
+  },
+  {
+    id: 2,
+    name: "IPL Auction",
+    date: "08-11-20",
+    prizes: "worth 5k",
+    description: "Do reckless bidding",
+    status: "completed",
+    poster: "url/of/poster",
+  },
+  {
+    id: 3,
+    name: "Christmas Arts",
+    date: "08-11-20",
+    prizes: "worth 5k",
+    description: "Make a santa clause",
+    status: "comming_soon",
+    poster: "url/of/poster",
+  },
+];

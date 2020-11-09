@@ -3,7 +3,7 @@ import "./Aboutus.css";
 
 function Aboutus() {
   return (
-    <div className="container">
+    <div className="container mt-5">
       <div className="row">
         <h2>About Us</h2>
       </div>
@@ -20,7 +20,7 @@ function Aboutus() {
       </div>
       <div className="row">
         <div className="col-12 col-sm-6 col-md-3 d-flex">
-          <div className="card flex-fill">
+          <div className="card flex-fill bg-dark">
             <img src="#" className="card-img-top" alt="graphic design"></img>
             <div className="card-body">
               <h5 className="card-title">Graphic Design</h5>
@@ -28,7 +28,7 @@ function Aboutus() {
           </div>
         </div>
         <div className="col-12 col-sm-6 col-md-3 d-flex">
-          <div className="card flex-fill">
+          <div className="card flex-fill bg-dark">
             <img
               src="#"
               className="card-img-top"
@@ -40,7 +40,7 @@ function Aboutus() {
           </div>
         </div>
         <div className="col-12 col-sm-6 col-md-3 d-flex">
-          <div className="card flex-fill">
+          <div className="card flex-fill bg-dark">
             <img src="#" className="card-img-top" alt="digital art"></img>
             <div className="card-body">
               <h5 className="card-title">Digital Art</h5>
@@ -48,7 +48,7 @@ function Aboutus() {
           </div>
         </div>
         <div className="col-12 col-sm-6 col-md-3 d-flex">
-          <div className="card flex-fill">
+          <div className="card flex-fill bg-dark">
             <img
               src="#"
               className="card-img-top"

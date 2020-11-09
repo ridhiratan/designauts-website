@@ -12,18 +12,10 @@ class Navbar extends Component {
     const { scrollPos } = this.state;
     const currentScrollPos = document.body.getBoundingClientRect().top;
     const show = currentScrollPos > scrollPos;
-    console.log("prev: ", scrollPos);
-    console.log("curr: ", currentScrollPos);
-    console.log("show: ", show);
-    console.log("");
     this.setState({
       scrollPos: currentScrollPos,
       show: show,
     });
-  }
-
-  componentDidUpdate(prevProps, prevState) {
-    console.log("Updated");
   }
 
   componentDidMount() {

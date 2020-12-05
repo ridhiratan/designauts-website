@@ -17,6 +17,7 @@ ul {
   background-color: black;
 }
 
+
 #ranking_list {
   display: flex;
   justify-content: center;
@@ -29,4 +30,16 @@ ul {
 
 #past_competitions {
   width: 75%;
+  overflow: scroll;
+}
+.carousel{
+  align-items: center;
+  margin: auto;
+  width:500px;
+  max-height:1000px;
+  margin-top: 20px;
+}
+.carousel-item>img{
+  max-height:300px;
+  align-items: center;
 }

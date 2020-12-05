@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+
 import "./Competitions.css";
 import { COMPETITIONS } from "../assets/CompetitionsDetail";
+import IPL_Auction from "../assets/IPL_Auction.jpeg";
 
 class Competitions extends Component {
   constructor(props) {
@@ -59,35 +61,58 @@ class Competitions extends Component {
       </div>
     );
   }
-
-  renderPastCompetitions(competitions) {
-    let past_competitions = [...competitions];
-    past_competitions = past_competitions.map((elem, idx) => {
-      return (
-        <div className="col-12 col-sm-6 col-md-3 d-flex" key={idx}>
-          {this.renderCompetition(elem)}
-        </div>
-      );
-    });
-    console.log(past_competitions);
-
-    return (
-      <div className="row">
-        <div className="col-12 col-sm-6 col-md-3 d-flex">
-          <div
-            className="card flex-fill"
-            onClick={(e) => {
-              this.handleClick(e);
-            }}
-          >
-            <img src="#" className="card-img-top" alt="digital art"></img>
-            <div className="card-body">
-              <h5 className="card-title">more from the past...</h5>
-              <p className="card-text">Date</p>
-            </div>
+  renderCarousel() {
+    return(
+      <div id="carouselExampleIndicators" className="carousel slide bg-dark col-12 col-md-6 " data-ride="carousel">
+        <ol className="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src={IPL_Auction} className="d-block w-100" alt="..."></img>
+          </div>
+          <div className="carousel-item">
+            <img src={IPL_Auction}  className="d-block w-100" alt="..."></img>
+          </div>
+          <div className="carousel-item">
+            <img src={IPL_Auction} className="d-block w-100" alt="..."></img>
           </div>
         </div>
-        <div id="past_competitions">{past_competitions}</div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    );
+  }
+  renderPastCompetitions(competitions) {
+    let past_competitions = [...competitions];
+    return (
+      <div className="group">
+        {/* <div className="row" >
+          <div className="col-12 col-sm-6 col-md-3 d-flex" id="column">
+            <div
+              className="card flex-fill"
+              onClick={(e) => {
+                this.handleClick(e);
+              }}
+            >
+              <img src="#" className="card-img-top" alt="digital art"></img>
+              <div className="card-body">
+                <h5 className="card-title">more from the past...</h5>
+                <p className="card-text">Date</p>
+              </div>
+            </div>
+          </div> */}
+          <div id="Carousel">
+            {this.renderCarousel()}
+          </div>
       </div>
     );
   }
@@ -169,6 +194,7 @@ class Competitions extends Component {
         {this.state.competition_type
           ? this.renderPastCompetitions(past_competitions)
           : null}
+        
       </div>
     );
   }

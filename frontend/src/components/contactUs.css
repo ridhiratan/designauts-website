@@ -1,0 +1,28 @@
+h2 {
+    text-align: center;
+    flex: auto;
+  }
+  .footer {
+    margin-top:20px;
+
+    width: auto;
+    height: auto;
+    background-color:grey;
+    color: white;
+    text-align: center;
+ }
+ .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+.fa-instagram {
+    background: purple;
+    color: white;
+}

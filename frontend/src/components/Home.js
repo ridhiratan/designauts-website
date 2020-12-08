@@ -4,6 +4,7 @@ import Contactus from "./contactUs";
 import Competitions from "./Competitions";
 import Navbar from "./Navbar";
 import Title from "./Title";
+import Resources from "./Resources";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <Aboutus />
       <Competitions />
       <Contactus />
+      <Resources />
     </div>
   );
 }

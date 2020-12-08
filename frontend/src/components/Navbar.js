@@ -66,12 +66,12 @@ class Navbar extends Component {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link mr-3" href="#contact" >
+                <a className="nav-link mr-3" href="#contact">
                   Contact
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link mr-3" href="#">
+                <a className="nav-link mr-3" href="#resources">
                   Resources
                 </a>
               </li>

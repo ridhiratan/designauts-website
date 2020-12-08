@@ -5,68 +5,85 @@ import IPL_Auction from "../assets/IPL_Auction.jpeg";
 class Contactus extends Component {
   constructor(props) {
     super(props);
-    this.state = { team: null };
+    this.state = { team: false };
   }
-  // handleClick(event) {
-  //   const team=team2020.innerHTML;
-  //   if (this.state.team !== team) {
-  //     this.setState({ team });
-  //   } else {
-  //     this.setState({ team: null });
-  //   }
-  // }
+  handleClick(event) {
+    this.setState({team:!this.state.team})
+  }
   renderTeam(team2020) {
-    return (
-      <div className="col-12 col-sm-6 col-md-3 d-flex">
-        <div class="img-with-text">
-          <img src={IPL_Auction}  alt="sometext"></img>
-          <p>Some text</p>
+    return ( 
+      <div className="row mt-3">
+        <div className="col-12  col-md-4 d-flex">
+          <div className="card flex-fill bg-dark">
+            <img
+              src="#"
+              className="card-img-top"
+              alt="user interface design"
+            ></img>
+            <div className="card-body">
+              <h5 className="card-title">NAYaN kharakhar</h5>
+            </div>
+          </div>
         </div>
-        <div class="img-with-text">
-          <img src={IPL_Auction}  alt="sometext" ></img>
-          <p>Some text</p>
+        <div className="col-12  col-md-4 d-flex">
+          <div className="card flex-fill bg-dark">
+            <img
+              src="#"
+              className="card-img-top"
+              alt="user interface design"
+            ></img>
+            <div className="card-body">
+              <h5 className="card-title">Satyajit thakur</h5>
+            </div>
+          </div>
         </div>
-        <div classname="core-team">
-          <h1>coreTeamdsjifffffffFFFfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffkddddddddd</h1>
+        <div className="col-12  col-md-4 d-flex">
+          <p>hello</p>
         </div>
       </div>
     );
   }
-
   render() {
     return (
-    <div className="container mt-5">
+    <div className="container mt-5" id="contact">
       <div className="row">
         <h2>Contact Us</h2>
       </div>
-      
       {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link> */}
-      <p>bla bla bla bla bla bla bla bla bla bla</p>
-      <div className="row">
-          <h2 id="h1">email:<a href="mailto:parasjain1237@gmail.com">parasjain1237@gmail.com</a>    </h2>
-          <h2 id="h2">phone: 8905336393</h2>
-      </div>
+
+      <div className="row"><p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+          bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+          bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+          bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla
+          bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+          bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla
+          bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p></div>
+      <div className="row d-flex justify-content-between bg-black mt-3">
+        <div>Email: <a href="mailto:ee">designauts@abcabcabc</a></div>
+        <div>Phone: 8905336393</div>
+    </div>    
       <div >
-        {/* <div className="col-12 col-sm-6 col-md-3 d-flex"> */}
-              {/* <div
-                className="team2020"
-                onClick={(e) => {
-                  this.handleClick(e);
-                }}
-              > */}
-          <h3 className="mr-auto">Team2020</h3>
-          {/* </div> */}
-          <h3  >previous year teams</h3>
+          <div className="row d-flex justify-content-between bg-black mt-3">
+            <div 
+            onClick={(e) => {
+              this.handleClick(e);
+            }}
+            >
+              Team2020</div>
+            <div>previous year teams</div>
+          </div>
         {/* </div> */}
-      <div className="row" id="footer">
-        {/* <div className="col-12 col-sm-6 col-md-12 d-flex" id="column">
+        {(this.state.team)?this.renderTeam() :null}
+      <div className="row mt-3" id="footer">
+        <div className="col-12 col-sm-6 ">
+          <img src={IPL_Auction}  className="d-block w-100 mr-3" alt="..." id="h"></img>
+        </div>
+        <div className="col-12 col-sm-6 "  >
           <img src={IPL_Auction}  className="d-block w-100" alt="..." id="h"></img>
-          <img src={IPL_Auction}  className="d-block w-100" alt="..." id="h"></img>
-        </div> */}
+        </div>
       </div>
       {/* <a href="#" class="fa fa-facebook"></a>
       <a href="#" class="fa fa-instagram"></a> */}
-      {/* {this.renderTeam()} */}
     </div>
   </div>
     );

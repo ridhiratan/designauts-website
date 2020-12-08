@@ -142,6 +142,7 @@ class Competitions extends Component {
         <div className="row">
           <h2>Competitions</h2>
         </div>
+        <div className="row">
         <p>
           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
@@ -151,6 +152,7 @@ class Competitions extends Component {
           bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla
           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
         </p>
+        </div>
         <div className="row">
           <div className="col-12 col-sm-6 col-md-3 d-flex">
             {this.renderCompetition(active_competitions[0])}

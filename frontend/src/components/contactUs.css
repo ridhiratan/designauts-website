@@ -1,28 +1,48 @@
+
 h2 {
     text-align: center;
     flex: auto;
+    color: black;
   }
-  .footer {
-    margin-top:20px;
-
-    width: auto;
-    height: auto;
-    background-color:grey;
-    color: white;
-    text-align: center;
- }
- .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-  }
+#h1 {
+  text-align: left;
+}
+#h2 {
+  text-align: right;
+}
+.contactus {
+  margin-top:20px;
+  margin-left:40px;
+  margin-right:40px;
+  width: auto;
+  height: auto;
+  background-color:grey;
+  color: white;
+  text-align: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
 .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
+  background: #3B5998;
+  color: white;
+}
 .fa-instagram {
-    background: purple;
-    color: white;
+  background: purple;
+  color: white;
+}
+#h { 
+  max-height: 300px;
+  max-width: 10000px;
+}
+.img-with-text {
+  text-align: justify;
+
+}
+.core-team {
+  background-color:red;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import Aboutus from "./Aboutus";
-import ContactUs from "./contactUs";
+import Contactus from "./contactUs";
 import Competitions from "./Competitions";
 import Navbar from "./Navbar";
 import Title from "./Title";
@@ -12,7 +12,7 @@ function Home() {
       <Title />
       <Aboutus />
       <Competitions />
-      <ContactUs />
+      <Contactus />
     </div>
   );
 }

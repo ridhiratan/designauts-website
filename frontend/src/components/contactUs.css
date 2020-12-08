@@ -38,11 +38,15 @@ h2 {
 #h { 
   max-height: 300px;
   max-width: 10000px;
+  height:auto;
+  width:auto;
 }
-.img-with-text {
-  text-align: justify;
 
+.bg-black {
+  color:white;
+  background-color:black;
+  font-size:1.5em;
 }
-.core-team {
-  background-color:red;
+a {
+  color:white;
 }
